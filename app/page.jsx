@@ -1,10 +1,12 @@
+import Hero from '@/components/Hero'
+import InfoBoxes from '@/components/InfoBoxes'
 import React from 'react'
 
 const HomePage = () => {
   return (
    <div>
-    hello world
-    <h1 className="px-2 py-1">hello</h1>
+   <Hero />
+   <InfoBoxes />
    </div>
   )
 }

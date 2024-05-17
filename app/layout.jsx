@@ -1,5 +1,6 @@
 
 import "@/assets/styles/global.css"
+
 import Navbar from "@/components/Navbar"
 
 
@@ -13,6 +14,7 @@ const MainLayout = ({children}) => {
         <body lang='en'>
             <Navbar />
         <main>
+        
             {children}
         </main>
         </body>
