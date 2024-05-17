@@ -1,5 +1,6 @@
 import React from "react";
 import propertyList from "@/properties.json";
+import PropertyCard from "@/components/PropertyCard";
 const PropertiesPage = () => {
   return (
     <section class="px-4 py-6">
@@ -12,12 +13,11 @@ const PropertiesPage = () => {
           <p>no property list has been found</p>
         ) : (
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {propertyList.map(({ name, _id }) => {
-              console.table(name);
-              <div key={_id}>
-                <h2>{name}</h2>
-              </div>;
-            })}
+            {propertyList?.map((property) => {
+                return (
+                    <PropertyCard key={property._id}/>
+                )
+            })})
           </div>
         )}
       </div>

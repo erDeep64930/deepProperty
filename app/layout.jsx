@@ -11,7 +11,7 @@ export const metadata = {
 }
 const MainLayout = ({children}) => {
   return (
-    <html>
+    <html charset="utf-8">
         <body lang='en'>
             <Navbar />
         <main>
