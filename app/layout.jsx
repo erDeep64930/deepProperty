@@ -7,11 +7,11 @@ import Navbar from "@/components/Navbar"
 
 export const metadata = {
     title:"DeepProperty | find the perfect rental property" ,
-    description : "find your drem rental property"
+    description : "find your dream rental property"
 }
 const MainLayout = ({children}) => {
   return (
-    <html charset="utf-8">
+    <html charSet="utf-8">
         <body lang='en'>
             <Navbar />
         <main>

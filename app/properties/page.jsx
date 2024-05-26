@@ -12,13 +12,12 @@ const PropertiesPage = () => {
         {propertyList.length === 0 ? (
           <p>no property list has been found</p>
         ) : (
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {propertyList?.map((property) => {
-                return (
-                    <PropertyCard key={property._id}/>
-                )
-            })})
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {propertyList?.map((property) => {
+            return <PropertyCard property={property} key={property._id} />;
+            })}
+          )
+        </div>
         )}
       </div>
     </section>
